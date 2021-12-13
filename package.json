@@ -8,7 +8,8 @@
     "dev-start": "nodemon ./src/App.ts",
     "start": "node ./build/App.js",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
+    "husky": "^7.0.4",
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
     "tslint": "^6.1.3",
