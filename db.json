@@ -85,7 +85,7 @@
       {
         "taskID": 9,
         "taskName": "Get approval from customer",
-        "startDate": new Date("02/13/2017"),
+        "startDate": 1550008800000,
         "endDate": 1487023200000,
         "duration": 2,
         "progress": 100,
@@ -94,7 +94,7 @@
       {
         "taskID": 10,
         "taskName": "Design Documentation",
-        "startDate": new Date("02/13/2017"),
+        "startDate": 1550008800000,
         "endDate": 1487023200000,
         "duration": 2,
         "progress": 100,
