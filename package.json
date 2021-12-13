@@ -16,7 +16,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "eslint": "^8.4.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node-json-db": "^1.4.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
