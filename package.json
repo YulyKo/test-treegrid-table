@@ -8,7 +8,8 @@
     "dev:start": "nodemon ./src/App.js",
     "start": "node ./build/App.js",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -36,6 +37,7 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "husky": "^7.0.4"
   }
 }
