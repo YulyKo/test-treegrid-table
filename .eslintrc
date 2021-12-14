@@ -10,7 +10,7 @@
     "jasmine": true
   },
   "rules": {
-    "no-console": 1,
+    "no-console": "error",
     "comma-dangle": 0,
     "camelcase": 0,
     "global-require": 1,
