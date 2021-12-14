@@ -1,369 +1,371 @@
-[
-  {
-    "taskID": 1,
-    "taskName": "Planning",
-    "startDate": 1486072800000,
-    "endDate": 1486418400000,
-    "progress": 100,
-    "duration": 5,
-    "priority": "Normal",
-    "approved": false,
-    "isInExpandState": true,
-    "subtasks": [
-      {
-        "taskID": 2,
-        "taskName": "Plan timeline",
-        "startDate": 1486072800000,
-        "endDate": 1486418400000,
-        "duration": 5,
-        "progress": 100,
-        "priority": "Normal",
-        "approved": false
-      },
-      {
-        "taskID": 3,
-        "taskName": "Plan budget",
-        "startDate": 1486072800000,
-        "endDate": 1486418400000,
-        "duration": 5,
-        "progress": 100,
-        "approved": true
-      },
-      {
-        "taskID": 4,
-        "taskName": "Allocate resources",
-        "startDate": 1486072800000,
-        "endDate": 1486418400000,
-        "duration": 5,
-        "progress": 100,
-        "priority": "Critical",
-        "approved": false
-      },
-      {
-        "taskID": 5,
-        "taskName": "Planning complete",
-        "startDate": 1486418400000,
-        "endDate": 1486418400000,
-        "duration": 0,
-        "progress": 0,
-        "priority": "Low",
-        "approved": true
-      }
-    ]
-  },
-  {
-    "taskID": 6,
-    "taskName": "Design",
-    "startDate": 1486677600000,
-    "endDate": 1487023200000,
-    "duration": 3,
-    "progress": 86,
-    "priority": "High",
-    "isInExpandState": false,
-    "approved": false,
-    "subtasks": [
-      {
-        "taskID": 7,
-        "taskName": "Software Specification",
-        "startDate": 1486677600000,
-        "endDate": 1486850400000,
-        "duration": 3,
-        "progress": 60,
-        "priority": "Normal",
-        "approved": false
-      },
-      {
-        "taskID": 8,
-        "taskName": "Develop prototype",
-        "startDate": 1486677600000,
-        "endDate": 1486850400000,
-        "duration": 3,
-        "progress": 100,
-        "priority": "Critical",
-        "approved": false
-      },
-      {
-        "taskID": 9,
-        "taskName": "Get approval from customer",
-        "startDate": 1550008800000,
-        "endDate": 1487023200000,
-        "duration": 2,
-        "progress": 100,
-        "approved": true
-      },
-      {
-        "taskID": 10,
-        "taskName": "Design Documentation",
-        "startDate": 1550008800000,
-        "endDate": 1487023200000,
-        "duration": 2,
-        "progress": 100,
-        "approved": true
-      },
-      {
-        "taskID": 11,
-        "taskName": "Design complete",
-        "startDate": 1487023200000,
-        "endDate": 1487023200000,
-        "duration": 0,
-        "progress": 0,
-        "priority": "Normal",
-        "approved": true
-      }
-    ]
-  },
-  {
-    "taskID": 12,
-    "taskName": "Implementation Phase",
-    "startDate": 1550354400000,
-    "endDate":1551218400000,
-    "priority": "Normal",
-    "approved": false,
-    "duration": 11,
-    "subtasks": [
-      {
-        "taskID": 13,
-        "taskName": "Phase 1",
-        "startDate": 1550354400000,
-        "endDate":1551218400000,
-        "priority": "High",
-        "approved": false,
-        "duration": 11,
-        "subtasks": [
-          {
-            "taskID": 14,
-            "taskName": "Implementation Module 1",
-            "startDate": 1550354400000,
-            "endDate":1551218400000,
-            "priority": "Normal",
-            "duration": 11,
-            "approved": false,
-            "subtasks": [
-              {
-                "taskID": 15,
-                "taskName": "Development Task 1",
-                "startDate": 1550354400000,
-                "endDate": 1550527200000,
-                "duration": 3,
-                "progress": "50",
-                "priority": "High",
-                "approved": false
-              },
-              {
-                "taskID": 16,
-                "taskName": "Development Task 2",
-                "startDate": 1550354400000,
-                "endDate": 1550527200000,
-                "duration": 3,
-                "progress": "50",
-                "priority": "Low",
-                "approved": true
-              },
-              {
-                "taskID": 17,
-                "taskName": "Testing",
-                "startDate":1550613600000,
-                "endDate": 1550700000000,
-                "duration": 2,
-                "progress": "0",
-                "priority": "Normal",
-                "approved": true
-              },
-              {
-                "taskID": 18,
-                "taskName": "Bug fix",
-                "startDate": 1550959200000,
-                "endDate": 1551045600000,
-                "duration": 2,
-                "progress": "0",
-                "priority": "Critical",
-                "approved": false
-              },
-              {
-                "taskID": 19,
-                "taskName": "Customer review meeting",
-                "startDate": 1550700000000,
-                "endDate":1551218400000,
-                "duration": 2,
-                "progress": "0",
-                "priority": "High",
-                "approved": false
-              },
-              {
-                "taskID": 20,
-                "taskName": "Phase 1 complete",
-                "startDate":1551218400000,
-                "endDate":1551218400000,
-                "duration": 0,
-                "priority": "Low",
-                "approved": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "taskID": 21,
-        "taskName": "Phase 2",
-        "startDate": 1550354400000,
-        "endDate": 1550700000000,
-        "priority": "High",
-        "approved": false,
-        "duration": 12,
-        "subtasks": [
-          {
-            "taskID": 22,
-            "taskName": "Implementation Module 2",
-            "startDate": 1550354400000,
-            "endDate": 1550700000000,
-            "priority": "Critical",
-            "approved": false,
-            "duration": 12,
-            "subtasks": [
-              {
-                "taskID": 23,
-                "taskName": "Development Task 1",
-                "startDate": 1550354400000,
-                "endDate":1550613600000,
-                "duration": 4,
-                "progress": "50",
-                "priority": "Normal",
-                "approved": true
-              },
-              {
-                "taskID": 24,
-                "taskName": "Development Task 2",
-                "startDate": 1550354400000,
-                "endDate":1550613600000,
-                "duration": 4,
-                "progress": "50",
-                "priority": "Critical",
-                "approved": true
-              },
-              {
-                "taskID": 25,
-                "taskName": "Testing",
-                "startDate": 1550700000000,
-                "endDate": 1550700000000,
-                "duration": 2,
-                "progress": "0",
-                "priority": "High",
-                "approved": false
-              },
-              {
-                "taskID": 26,
-                "taskName": "Bug fix",
-                "startDate": 1551045600000,
-                "endDate": 1551132000000,
-                "duration": 2,
-                "progress": "0",
-                "priority": "Low",
-                "approved": false
-              },
-              {
-                "taskID": 27,
-                "taskName": "Customer review meeting",
-                "startDate":1551218400000,
-                "endDate": 1551304800000,
-                "duration": 2,
-                "progress": "0",
-                "priority": "Critical",
-                "approved": true
-              },
-              {
-                "taskID": 28,
-                "taskName": "Phase 2 complete",
-                "startDate": 1551304800000,
-                "endDate": 1551304800000,
-                "duration": 0,
-                "priority": "Normal",
-                "approved": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "taskID": 29,
-        "taskName": "Phase 3",
-        "startDate": 1550354400000,
-        "endDate":1551218400000,
-        "priority": "Normal",
-        "approved": false,
-        "duration": 11,
-        "subtasks": [
-          {
-            "taskID": 30,
-            "taskName": "Implementation Module 3",
-            "startDate": 1550354400000,
-            "endDate":1551218400000,
-            "priority": "High",
-            "approved": false,
-            "duration": 11,
-            "subtasks": [
-              {
-                "taskID": 31,
-                "taskName": "Development Task 1",
-                "startDate": 1550354400000,
-                "endDate": 1550527200000,
-                "duration": 3,
-                "progress": "50",
-                "priority": "Low",
-                "approved": true
-              },
-              {
-                "taskID": 32,
-                "taskName": "Development Task 2",
-                "startDate": 1550354400000,
-                "endDate": 1550527200000,
-                "duration": 3,
-                "progress": "50",
-                "priority": "Normal",
-                "approved": false
-              },
-              {
-                "taskID": 33,
-                "taskName": "Testing",
-                "startDate":1550613600000,
-                "endDate": 1550700000000,
-                "duration": 2,
-                "progress": "0",
-                "priority": "Critical",
-                "approved": true
-              },
-              {
-                "taskID": 34,
-                "taskName": "Bug fix",
-                "startDate": 1550959200000,
-                "endDate": 1551045600000,
-                "duration": 2,
-                "progress": "0",
-                "priority": "High",
-                "approved": false
-              },
-              {
-                "taskID": 35,
-                "taskName": "Customer review meeting",
-                "startDate": 1551132000000,
-                "endDate":1551218400000,
-                "duration": 2,
-                "progress": "0",
-                "priority": "Normal",
-                "approved": true
-              },
-              {
-                "taskID": 36,
-                "taskName": "Phase 3 complete",
-                "startDate":1551218400000,
-                "endDate":1551218400000,
-                "duration": 0,
-                "priority": "Critical",
-                "approved": false
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "allTasks": [
+    {
+      "taskID": 1,
+      "taskName": "Planning",
+      "startDate": 1486072800000,
+      "endDate": 1486418400000,
+      "progress": 100,
+      "duration": 5,
+      "priority": "Normal",
+      "approved": false,
+      "isInExpandState": true,
+      "subtasks": [
+        {
+          "taskID": 2,
+          "taskName": "Plan timeline",
+          "startDate": 1486072800000,
+          "endDate": 1486418400000,
+          "duration": 5,
+          "progress": 100,
+          "priority": "Normal",
+          "approved": false
+        },
+        {
+          "taskID": 3,
+          "taskName": "Plan budget",
+          "startDate": 1486072800000,
+          "endDate": 1486418400000,
+          "duration": 5,
+          "progress": 100,
+          "approved": true
+        },
+        {
+          "taskID": 4,
+          "taskName": "Allocate resources",
+          "startDate": 1486072800000,
+          "endDate": 1486418400000,
+          "duration": 5,
+          "progress": 100,
+          "priority": "Critical",
+          "approved": false
+        },
+        {
+          "taskID": 5,
+          "taskName": "Planning complete",
+          "startDate": 1486418400000,
+          "endDate": 1486418400000,
+          "duration": 0,
+          "progress": 0,
+          "priority": "Low",
+          "approved": true
+        }
+      ]
+    },
+    {
+      "taskID": 6,
+      "taskName": "Design",
+      "startDate": 1486677600000,
+      "endDate": 1487023200000,
+      "duration": 3,
+      "progress": 86,
+      "priority": "High",
+      "isInExpandState": false,
+      "approved": false,
+      "subtasks": [
+        {
+          "taskID": 7,
+          "taskName": "Software Specification",
+          "startDate": 1486677600000,
+          "endDate": 1486850400000,
+          "duration": 3,
+          "progress": 60,
+          "priority": "Normal",
+          "approved": false
+        },
+        {
+          "taskID": 8,
+          "taskName": "Develop prototype",
+          "startDate": 1486677600000,
+          "endDate": 1486850400000,
+          "duration": 3,
+          "progress": 100,
+          "priority": "Critical",
+          "approved": false
+        },
+        {
+          "taskID": 9,
+          "taskName": "Get approval from customer",
+          "startDate": 1550008800000,
+          "endDate": 1487023200000,
+          "duration": 2,
+          "progress": 100,
+          "approved": true
+        },
+        {
+          "taskID": 10,
+          "taskName": "Design Documentation",
+          "startDate": 1550008800000,
+          "endDate": 1487023200000,
+          "duration": 2,
+          "progress": 100,
+          "approved": true
+        },
+        {
+          "taskID": 11,
+          "taskName": "Design complete",
+          "startDate": 1487023200000,
+          "endDate": 1487023200000,
+          "duration": 0,
+          "progress": 0,
+          "priority": "Normal",
+          "approved": true
+        }
+      ]
+    },
+    {
+      "taskID": 12,
+      "taskName": "Implementation Phase",
+      "startDate": 1550354400000,
+      "endDate":1551218400000,
+      "priority": "Normal",
+      "approved": false,
+      "duration": 11,
+      "subtasks": [
+        {
+          "taskID": 13,
+          "taskName": "Phase 1",
+          "startDate": 1550354400000,
+          "endDate":1551218400000,
+          "priority": "High",
+          "approved": false,
+          "duration": 11,
+          "subtasks": [
+            {
+              "taskID": 14,
+              "taskName": "Implementation Module 1",
+              "startDate": 1550354400000,
+              "endDate":1551218400000,
+              "priority": "Normal",
+              "duration": 11,
+              "approved": false,
+              "subtasks": [
+                {
+                  "taskID": 15,
+                  "taskName": "Development Task 1",
+                  "startDate": 1550354400000,
+                  "endDate": 1550527200000,
+                  "duration": 3,
+                  "progress": "50",
+                  "priority": "High",
+                  "approved": false
+                },
+                {
+                  "taskID": 16,
+                  "taskName": "Development Task 2",
+                  "startDate": 1550354400000,
+                  "endDate": 1550527200000,
+                  "duration": 3,
+                  "progress": "50",
+                  "priority": "Low",
+                  "approved": true
+                },
+                {
+                  "taskID": 17,
+                  "taskName": "Testing",
+                  "startDate":1550613600000,
+                  "endDate": 1550700000000,
+                  "duration": 2,
+                  "progress": "0",
+                  "priority": "Normal",
+                  "approved": true
+                },
+                {
+                  "taskID": 18,
+                  "taskName": "Bug fix",
+                  "startDate": 1550959200000,
+                  "endDate": 1551045600000,
+                  "duration": 2,
+                  "progress": "0",
+                  "priority": "Critical",
+                  "approved": false
+                },
+                {
+                  "taskID": 19,
+                  "taskName": "Customer review meeting",
+                  "startDate": 1550700000000,
+                  "endDate":1551218400000,
+                  "duration": 2,
+                  "progress": "0",
+                  "priority": "High",
+                  "approved": false
+                },
+                {
+                  "taskID": 20,
+                  "taskName": "Phase 1 complete",
+                  "startDate":1551218400000,
+                  "endDate":1551218400000,
+                  "duration": 0,
+                  "priority": "Low",
+                  "approved": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "taskID": 21,
+          "taskName": "Phase 2",
+          "startDate": 1550354400000,
+          "endDate": 1550700000000,
+          "priority": "High",
+          "approved": false,
+          "duration": 12,
+          "subtasks": [
+            {
+              "taskID": 22,
+              "taskName": "Implementation Module 2",
+              "startDate": 1550354400000,
+              "endDate": 1550700000000,
+              "priority": "Critical",
+              "approved": false,
+              "duration": 12,
+              "subtasks": [
+                {
+                  "taskID": 23,
+                  "taskName": "Development Task 1",
+                  "startDate": 1550354400000,
+                  "endDate":1550613600000,
+                  "duration": 4,
+                  "progress": "50",
+                  "priority": "Normal",
+                  "approved": true
+                },
+                {
+                  "taskID": 24,
+                  "taskName": "Development Task 2",
+                  "startDate": 1550354400000,
+                  "endDate":1550613600000,
+                  "duration": 4,
+                  "progress": "50",
+                  "priority": "Critical",
+                  "approved": true
+                },
+                {
+                  "taskID": 25,
+                  "taskName": "Testing",
+                  "startDate": 1550700000000,
+                  "endDate": 1550700000000,
+                  "duration": 2,
+                  "progress": "0",
+                  "priority": "High",
+                  "approved": false
+                },
+                {
+                  "taskID": 26,
+                  "taskName": "Bug fix",
+                  "startDate": 1551045600000,
+                  "endDate": 1551132000000,
+                  "duration": 2,
+                  "progress": "0",
+                  "priority": "Low",
+                  "approved": false
+                },
+                {
+                  "taskID": 27,
+                  "taskName": "Customer review meeting",
+                  "startDate":1551218400000,
+                  "endDate": 1551304800000,
+                  "duration": 2,
+                  "progress": "0",
+                  "priority": "Critical",
+                  "approved": true
+                },
+                {
+                  "taskID": 28,
+                  "taskName": "Phase 2 complete",
+                  "startDate": 1551304800000,
+                  "endDate": 1551304800000,
+                  "duration": 0,
+                  "priority": "Normal",
+                  "approved": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "taskID": 29,
+          "taskName": "Phase 3",
+          "startDate": 1550354400000,
+          "endDate":1551218400000,
+          "priority": "Normal",
+          "approved": false,
+          "duration": 11,
+          "subtasks": [
+            {
+              "taskID": 30,
+              "taskName": "Implementation Module 3",
+              "startDate": 1550354400000,
+              "endDate":1551218400000,
+              "priority": "High",
+              "approved": false,
+              "duration": 11,
+              "subtasks": [
+                {
+                  "taskID": 31,
+                  "taskName": "Development Task 1",
+                  "startDate": 1550354400000,
+                  "endDate": 1550527200000,
+                  "duration": 3,
+                  "progress": "50",
+                  "priority": "Low",
+                  "approved": true
+                },
+                {
+                  "taskID": 32,
+                  "taskName": "Development Task 2",
+                  "startDate": 1550354400000,
+                  "endDate": 1550527200000,
+                  "duration": 3,
+                  "progress": "50",
+                  "priority": "Normal",
+                  "approved": false
+                },
+                {
+                  "taskID": 33,
+                  "taskName": "Testing",
+                  "startDate":1550613600000,
+                  "endDate": 1550700000000,
+                  "duration": 2,
+                  "progress": "0",
+                  "priority": "Critical",
+                  "approved": true
+                },
+                {
+                  "taskID": 34,
+                  "taskName": "Bug fix",
+                  "startDate": 1550959200000,
+                  "endDate": 1551045600000,
+                  "duration": 2,
+                  "progress": "0",
+                  "priority": "High",
+                  "approved": false
+                },
+                {
+                  "taskID": 35,
+                  "taskName": "Customer review meeting",
+                  "startDate": 1551132000000,
+                  "endDate":1551218400000,
+                  "duration": 2,
+                  "progress": "0",
+                  "priority": "Normal",
+                  "approved": true
+                },
+                {
+                  "taskID": 36,
+                  "taskName": "Phase 3 complete",
+                  "startDate":1551218400000,
+                  "endDate":1551218400000,
+                  "duration": 0,
+                  "priority": "Critical",
+                  "approved": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

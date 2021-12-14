@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-export-extensions",
+    "transform-es2015-modules-commonjs",
+    "inline-dotenv"
+  ],
+  "retainLines": true
+}
