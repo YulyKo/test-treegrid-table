@@ -1,6 +1,4 @@
-// import { BaseError } from './BaseError.class';
-
-const { BaseError } = require("./BaseError.class");
+const { BaseError } = require('./BaseError.class');
 
 class ErrorWrapper extends BaseError {
   cause;
