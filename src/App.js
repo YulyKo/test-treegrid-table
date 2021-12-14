@@ -9,6 +9,7 @@ app.use(cors());
 app.use('/api', router);
 
 app.listen(8000,()=>{
+  // eslint-disable-next-line no-console
   console.log('Server Started at Port, 8000');
 });
  
