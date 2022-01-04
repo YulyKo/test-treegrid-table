@@ -3,6 +3,6 @@ const { taskController } = require('../modules/Tasks');
 
 const router = new Router();
 
-router.get('/tasks', taskController.fetchAll);
+router.get('/rows', taskController.fetchAll);
 
 module.exports = router;
