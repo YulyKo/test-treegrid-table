@@ -19,7 +19,9 @@ const create = async (request, response, next) => {
     const { params, body } = request;
 
     // @rowStatus can be 'next' or 'child'
-    await rowService.create(params.rowStatus, body);
+    // @body row data & parents indexes and inds array
+    await rowService.create(params.rowStatus, params.index, body);
+
     return response.status(200);
   } catch (error) {
     next(error);
