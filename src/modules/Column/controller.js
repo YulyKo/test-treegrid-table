@@ -1,19 +1,27 @@
 const columnService = require('./service');
 
-const fetchAll = async (request, response, next) => {
+const fetchAll = (request, response, next) => {
   try {
-    await columnService.indexAll(
-      (error, result) => {
-        if (error) return response.status(error.status).send(error);
+    const result = columnService.indexAll();
+    return response.status(200).json(result);
+  } catch (error) {
+    next(error);
+  }
+};
 
-        return response.status(200).json(result);
-      }
-    );
+const createOne = ({ body }, response, next) => {
+  try {
+    if (body) {
+      columnService.create(body);
+    }
+
+    return response.status(200).json({status: 'success'});
   } catch (error) {
     next(error);
   }
 };
 
 module.exports = {
-  fetchAll
+  fetchAll,
+  createOne
 };

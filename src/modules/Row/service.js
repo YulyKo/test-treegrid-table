@@ -4,7 +4,6 @@ const { v4: uuidv4 } = require('uuid');
 const { allRows } = databaseData;
 
 const indexAll = async (callback) => {
-  const allRows = await databaseData.rows;
   return callback(null, allRows);
 };
 
