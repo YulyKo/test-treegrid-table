@@ -1,9 +1,123 @@
 {
-  "allTasks": [
+  "columns": [
     {
-      "id": 1,
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c1",
+      "field": "index",
+      "name": "Id",
+      "dataType": "number",
+      "minWidth": 20,
+      "fontSize": 14,
+      "defaultValue": 0,
+      "fontColor": "#000000",
+      "backgroundColor": "#FFFFFF",
+      "alignment": "right",
+      "textWrap": true,
+      "dropdownValues": []
+    },
+    {
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c2",
+      "field": "name",
+      "name": "Name",
+      "dataType": "string",
+      "minWidth": 20,
+      "fontSize": 14,
+      "defaultValue": 0,
+      "fontColor": "#000000",
+      "backgroundColor": "#FFFFFF",
+      "alignment": "right",
+      "textWrap": true,
+      "dropdownValues": []
+    },
+    {
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c3",
+      "field": "index",
+      "name": "startDate",
+      "dataType": "date",
+      "minWidth": 20,
+      "fontSize": 14,
+      "defaultValue": 0,
+      "fontColor": "#000000",
+      "backgroundColor": "#FFFFFF",
+      "alignment": "right",
+      "textWrap": true,
+      "dropdownValues": []
+    },
+    {
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c4",
+      "field": "endDate",
+      "name": "End Date",
+      "dataType": "date",
+      "minWidth": 20,
+      "fontSize": 14,
+      "defaultValue": 0,
+      "fontColor": "#000000",
+      "backgroundColor": "#FFFFFF",
+      "alignment": "right",
+      "textWrap": true,
+      "dropdownValues": []
+    },
+    {
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c5",
+      "field": "duration",
+      "name": "Duration",
+      "dataType": "number",
+      "minWidth": 20,
+      "fontSize": 14,
+      "defaultValue": 0,
+      "fontColor": "#000000",
+      "backgroundColor": "#FFFFFF",
+      "alignment": "right",
+      "textWrap": true,
+      "dropdownValues": []
+    },
+    {
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c6",
+      "field": "progress",
+      "name": "Progress",
+      "dataType": "number",
+      "minWidth": 20,
+      "fontSize": 14,
+      "defaultValue": 0,
+      "fontColor": "#000000",
+      "backgroundColor": "#FFFFFF",
+      "alignment": "right",
+      "textWrap": true,
+      "dropdownValues": []
+    },
+    {
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c7",
+      "field": "priority",
+      "name": "Priority",
+      "dataType": "number",
+      "minWidth": 20,
+      "fontSize": 14,
+      "defaultValue": 0,
+      "fontColor": "#000000",
+      "backgroundColor": "#FFFFFF",
+      "alignment": "right",
+      "textWrap": true,
+      "dropdownValues": []
+    },
+    {
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c8",
+      "field": "aproved",
+      "name": "Aproved",
+      "dataType": "boolean",
+      "minWidth": 20,
+      "fontSize": 14,
+      "defaultValue": 0,
+      "fontColor": "#000000",
+      "backgroundColor": "#FFFFFF",
+      "alignment": "right",
+      "textWrap": true,
+      "dropdownValues": []
+    }
+  ],
+  "allRows": [
+    {
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-1",
       "index": 1,
-      "taskName": "Planning",
+      "name": "Planning",
       "startDate": 1486072800000,
       "endDate": 1486418400000,
       "progress": 100,
@@ -11,11 +125,11 @@
       "priority": "Normal",
       "approved": false,
       "isInExpandState": true,
-      "subtasks": [
+      "subrows": [
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-2",
           "index": 2,
-          "taskName": "Plan timeline",
+          "name": "Plan timeline",
           "startDate": 1486072800000,
           "endDate": 1486418400000,
           "duration": 5,
@@ -24,9 +138,9 @@
           "approved": false
         },
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-3",
           "index": 3,
-          "taskName": "Plan budget",
+          "name": "Plan budget",
           "startDate": 1486072800000,
           "endDate": 1486418400000,
           "duration": 5,
@@ -34,9 +148,9 @@
           "approved": true
         },
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-4",
           "index": 4,
-          "taskName": "Allocate resources",
+          "name": "Allocate resources",
           "startDate": 1486072800000,
           "endDate": 1486418400000,
           "duration": 5,
@@ -45,9 +159,9 @@
           "approved": false
         },
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-5",
           "index": 5,
-          "taskName": "Planning complete",
+          "name": "Planning complete",
           "startDate": 1486418400000,
           "endDate": 1486418400000,
           "duration": 0,
@@ -58,9 +172,9 @@
       ]
     },
     {
-      "id": 1,
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-6",
       "index": 6,
-      "taskName": "Design",
+      "name": "Design",
       "startDate": 1486677600000,
       "endDate": 1487023200000,
       "duration": 3,
@@ -68,11 +182,11 @@
       "priority": "High",
       "isInExpandState": false,
       "approved": false,
-      "subtasks": [
+      "subrows": [
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-7",
           "index": 7,
-          "taskName": "Software Specification",
+          "name": "Software Specification",
           "startDate": 1486677600000,
           "endDate": 1486850400000,
           "duration": 3,
@@ -81,9 +195,9 @@
           "approved": false
         },
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-8",
           "index": 8,
-          "taskName": "Develop prototype",
+          "name": "Develop prototype",
           "startDate": 1486677600000,
           "endDate": 1486850400000,
           "duration": 3,
@@ -92,9 +206,9 @@
           "approved": false
         },
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-9",
           "index": 9,
-          "taskName": "Get approval from customer",
+          "name": "Get approval from customer",
           "startDate": 1550008800000,
           "endDate": 1487023200000,
           "duration": 2,
@@ -102,9 +216,9 @@
           "approved": true
         },
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-10",
           "index": 10,
-          "taskName": "Design Documentation",
+          "name": "Design Documentation",
           "startDate": 1550008800000,
           "endDate": 1487023200000,
           "duration": 2,
@@ -112,9 +226,9 @@
           "approved": true
         },
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-11",
           "index": 11,
-          "taskName": "Design complete",
+          "name": "Design complete",
           "startDate": 1487023200000,
           "endDate": 1487023200000,
           "duration": 0,
@@ -125,39 +239,39 @@
       ]
     },
     {
-      "id": 1,
+      "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-12",
       "index": 12,
-      "taskName": "Implementation Phase",
+      "name": "Implementation Phase",
       "startDate": 1550354400000,
       "endDate":1551218400000,
       "priority": "Normal",
       "approved": false,
       "duration": 11,
-      "subtasks": [
+      "subrows": [
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-13",
           "index": 13,
-          "taskName": "Phase 1",
+          "name": "Phase 1",
           "startDate": 1550354400000,
           "endDate":1551218400000,
           "priority": "High",
           "approved": false,
           "duration": 11,
-          "subtasks": [
+          "subrows": [
             {
-              "id": 1,
+              "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-14",
               "index": 14,
-              "taskName": "Implementation Module 1",
+              "name": "Implementation Module 1",
               "startDate": 1550354400000,
               "endDate":1551218400000,
               "priority": "Normal",
               "duration": 11,
               "approved": false,
-              "subtasks": [
+              "subrows": [
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-15",
                   "index": 15,
-                  "taskName": "Development Task 1",
+                  "name": "Development Task 1",
                   "startDate": 1550354400000,
                   "endDate": 1550527200000,
                   "duration": 3,
@@ -166,9 +280,9 @@
                   "approved": false
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-16",
                   "index": 16,
-                  "taskName": "Development Task 2",
+                  "name": "Development Task 2",
                   "startDate": 1550354400000,
                   "endDate": 1550527200000,
                   "duration": 3,
@@ -177,9 +291,9 @@
                   "approved": true
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-17",
                   "index": 17,
-                  "taskName": "Testing",
+                  "name": "Testing",
                   "startDate":1550613600000,
                   "endDate": 1550700000000,
                   "duration": 2,
@@ -188,9 +302,9 @@
                   "approved": true
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-18",
                   "index": 18,
-                  "taskName": "Bug fix",
+                  "name": "Bug fix",
                   "startDate": 1550959200000,
                   "endDate": 1551045600000,
                   "duration": 2,
@@ -199,9 +313,9 @@
                   "approved": false
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-19",
                   "index": 19,
-                  "taskName": "Customer review meeting",
+                  "name": "Customer review meeting",
                   "startDate": 1550700000000,
                   "endDate":1551218400000,
                   "duration": 2,
@@ -210,9 +324,9 @@
                   "approved": false
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-20",
                   "index": 20,
-                  "taskName": "Phase 1 complete",
+                  "name": "Phase 1 complete",
                   "startDate":1551218400000,
                   "endDate":1551218400000,
                   "duration": 0,
@@ -224,29 +338,29 @@
           ]
         },
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-21",
           "index": 21,
-          "taskName": "Phase 2",
+          "name": "Phase 2",
           "startDate": 1550354400000,
           "endDate": 1550700000000,
           "priority": "High",
           "approved": false,
           "duration": 12,
-          "subtasks": [
+          "subrows": [
             {
-              "id": 1,
+              "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-22",
               "index": 22,
-              "taskName": "Implementation Module 2",
+              "name": "Implementation Module 2",
               "startDate": 1550354400000,
               "endDate": 1550700000000,
               "priority": "Critical",
               "approved": false,
               "duration": 12,
-              "subtasks": [
+              "subrows": [
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-23",
                   "index": 23,
-                  "taskName": "Development Task 1",
+                  "name": "Development Task 1",
                   "startDate": 1550354400000,
                   "endDate":1550613600000,
                   "duration": 4,
@@ -255,9 +369,9 @@
                   "approved": true
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-24",
                   "index": 24,
-                  "taskName": "Development Task 2",
+                  "name": "Development Task 2",
                   "startDate": 1550354400000,
                   "endDate":1550613600000,
                   "duration": 4,
@@ -266,9 +380,9 @@
                   "approved": true
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-25",
                   "index": 25,
-                  "taskName": "Testing",
+                  "name": "Testing",
                   "startDate": 1550700000000,
                   "endDate": 1550700000000,
                   "duration": 2,
@@ -277,9 +391,9 @@
                   "approved": false
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-26",
                   "index": 26,
-                  "taskName": "Bug fix",
+                  "name": "Bug fix",
                   "startDate": 1551045600000,
                   "endDate": 1551132000000,
                   "duration": 2,
@@ -288,9 +402,9 @@
                   "approved": false
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-27",
                   "index": 27,
-                  "taskName": "Customer review meeting",
+                  "name": "Customer review meeting",
                   "startDate":1551218400000,
                   "endDate": 1551304800000,
                   "duration": 2,
@@ -299,9 +413,9 @@
                   "approved": true
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-28",
                   "index": 28,
-                  "taskName": "Phase 2 complete",
+                  "name": "Phase 2 complete",
                   "startDate": 1551304800000,
                   "endDate": 1551304800000,
                   "duration": 0,
@@ -313,29 +427,29 @@
           ]
         },
         {
-          "id": 1,
+          "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-29",
           "index": 29,
-          "taskName": "Phase 3",
+          "name": "Phase 3",
           "startDate": 1550354400000,
           "endDate":1551218400000,
           "priority": "Normal",
           "approved": false,
           "duration": 11,
-          "subtasks": [
+          "subrows": [
             {
-              "id": 1,
+              "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-30",
               "index": 30,
-              "taskName": "Implementation Module 3",
+              "name": "Implementation Module 3",
               "startDate": 1550354400000,
               "endDate":1551218400000,
               "priority": "High",
               "approved": false,
               "duration": 11,
-              "subtasks": [
+              "subrows": [
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-31",
                   "index": 31,
-                  "taskName": "Development Task 1",
+                  "name": "Development Task 1",
                   "startDate": 1550354400000,
                   "endDate": 1550527200000,
                   "duration": 3,
@@ -344,9 +458,9 @@
                   "approved": true
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-32",
                   "index": 32,
-                  "taskName": "Development Task 2",
+                  "name": "Development Task 2",
                   "startDate": 1550354400000,
                   "endDate": 1550527200000,
                   "duration": 3,
@@ -355,9 +469,9 @@
                   "approved": false
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-33",
                   "index": 33,
-                  "taskName": "Testing",
+                  "name": "Testing",
                   "startDate":1550613600000,
                   "endDate": 1550700000000,
                   "duration": 2,
@@ -366,9 +480,9 @@
                   "approved": true
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-34",
                   "index": 34,
-                  "taskName": "Bug fix",
+                  "name": "Bug fix",
                   "startDate": 1550959200000,
                   "endDate": 1551045600000,
                   "duration": 2,
@@ -377,9 +491,9 @@
                   "approved": false
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-35",
                   "index": 35,
-                  "taskName": "Customer review meeting",
+                  "name": "Customer review meeting",
                   "startDate": 1551132000000,
                   "endDate":1551218400000,
                   "duration": 2,
@@ -388,9 +502,9 @@
                   "approved": true
                 },
                 {
-                  "id": 1,
+                  "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-36",
                   "index": 36,
-                  "taskName": "Phase 3 complete",
+                  "name": "Phase 3 complete",
                   "startDate":1551218400000,
                   "endDate":1551218400000,
                   "duration": 0,
