@@ -5,7 +5,7 @@
             "field": "index",
             "name": "Id",
             "dataType": "number",
-            "minWidth": 20,
+            "minWidth": 120,
             "fontSize": 14,
             "defaultValue": 0,
             "fontColor": "#000000",
@@ -19,7 +19,7 @@
             "field": "name",
             "name": "Name",
             "dataType": "string",
-            "minWidth": 20,
+            "minWidth": 120,
             "fontSize": 14,
             "defaultValue": 0,
             "fontColor": "#000000",
@@ -30,10 +30,10 @@
         },
         {
             "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c3",
-            "field": "index",
-            "name": "startDate",
+            "field": "startDate",
+            "name": "Start Date",
             "dataType": "date",
-            "minWidth": 20,
+            "minWidth": 120,
             "fontSize": 14,
             "defaultValue": 0,
             "fontColor": "#000000",
@@ -47,7 +47,7 @@
             "field": "endDate",
             "name": "End Date",
             "dataType": "date",
-            "minWidth": 20,
+            "minWidth": 120,
             "fontSize": 14,
             "defaultValue": 0,
             "fontColor": "#000000",
@@ -61,7 +61,7 @@
             "field": "duration",
             "name": "Duration",
             "dataType": "number",
-            "minWidth": 20,
+            "minWidth": 120,
             "fontSize": 14,
             "defaultValue": 0,
             "fontColor": "#000000",
@@ -75,7 +75,7 @@
             "field": "progress",
             "name": "Progress",
             "dataType": "number",
-            "minWidth": 20,
+            "minWidth": 120,
             "fontSize": 14,
             "defaultValue": 0,
             "fontColor": "#000000",
@@ -89,7 +89,7 @@
             "field": "priority",
             "name": "Priority",
             "dataType": "number",
-            "minWidth": 20,
+            "minWidth": 120,
             "fontSize": 14,
             "defaultValue": 0,
             "fontColor": "#000000",
@@ -103,9 +103,9 @@
             "field": "aproved",
             "name": "Aproved",
             "dataType": "boolean",
-            "minWidth": 20,
+            "minWidth": 120,
             "fontSize": 14,
-            "defaultValue": 0,
+            "defaultValue": "true",
             "fontColor": "#000000",
             "backgroundColor": "#FFFFFF",
             "alignment": "right",
@@ -118,7 +118,7 @@
             "dataType": "boolean",
             "minWidth": 40,
             "fontSize": 14,
-            "defaultValue": false,
+            "defaultValue": "true",
             "fontColor": "#000000",
             "backgroundColor": "#FFFFFF",
             "alignment": "right",
@@ -137,8 +137,9 @@
             "progress": 100,
             "duration": 5,
             "priority": "Normal",
-            "approved": false,
+            "aproved": "false",
             "isInExpandState": true,
+            "isDone": "false",
             "subrows": [
                 {
                     "name": "TTTT",
@@ -147,7 +148,8 @@
                     "progress": 100,
                     "duration": 5,
                     "priority": "Normal",
-                    "approved": false,
+                    "aproved": "false",
+                    "isDone": "false",
                     "isInExpandState": true,
                     "subrows": [],
                     "id": "28449150-5fd9-46ba-9c8c-762a3e658e1a",
@@ -160,9 +162,10 @@
                     "startDate": 1486072800000,
                     "endDate": 1486418400000,
                     "duration": 5,
+                    "isDone": "false",
                     "progress": 100,
                     "priority": "Normal",
-                    "approved": false,
+                    "aproved": "false",
                     "subrows": []
                 },
                 {
@@ -171,9 +174,10 @@
                     "name": "Plan budget",
                     "startDate": 1486072800000,
                     "endDate": 1486418400000,
+                    "isDone": "false",
                     "duration": 5,
                     "progress": 100,
-                    "approved": true,
+                    "aproved": true,
                     "subrows": []
                 },
                 {
@@ -183,9 +187,10 @@
                     "startDate": 1486072800000,
                     "endDate": 1486418400000,
                     "duration": 5,
+                    "isDone": "false",
                     "progress": 100,
                     "priority": "Critical",
-                    "approved": false,
+                    "aproved": "false",
                     "subrows": []
                 },
                 {
@@ -196,8 +201,9 @@
                     "endDate": 1486418400000,
                     "duration": 0,
                     "progress": 0,
+                    "isDone": "false",
                     "priority": "Low",
-                    "approved": true,
+                    "aproved": true,
                     "subrows": []
                 }
             ]
@@ -211,8 +217,9 @@
             "duration": 3,
             "progress": 86,
             "priority": "High",
-            "isInExpandState": false,
-            "approved": false,
+            "isDone": "false",
+            "isInExpandState": "false",
+            "aproved": "false",
             "subrows": [
                 {
                     "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-7",
@@ -223,7 +230,8 @@
                     "duration": 3,
                     "progress": 60,
                     "priority": "Normal",
-                    "approved": false,
+                    "isDone": "false",
+                    "aproved": "false",
                     "subrows": []
                 },
                 {
@@ -235,7 +243,8 @@
                     "duration": 3,
                     "progress": 100,
                     "priority": "Critical",
-                    "approved": false,
+                    "isDone": "false",
+                    "aproved": "false",
                     "subrows": []
                 },
                 {
@@ -246,7 +255,8 @@
                     "endDate": 1487023200000,
                     "duration": 2,
                     "progress": 100,
-                    "approved": true,
+                    "isDone": "false",
+                    "aproved": true,
                     "subrows": []
                 },
                 {
@@ -256,8 +266,9 @@
                     "startDate": 1550008800000,
                     "endDate": 1487023200000,
                     "duration": 2,
+                    "isDone": "false",
                     "progress": 100,
-                    "approved": true,
+                    "aproved": true,
                     "subrows": []
                 },
                 {
@@ -265,11 +276,12 @@
                     "index": 12,
                     "name": "Design complete",
                     "startDate": 1487023200000,
+                    "isDone": "false",
                     "endDate": 1487023200000,
                     "duration": 0,
                     "progress": 0,
                     "priority": "Normal",
-                    "approved": true,
+                    "aproved": true,
                     "subrows": []
                 }
             ]
@@ -280,8 +292,9 @@
             "name": "Implementation Phase",
             "startDate": 1550354400000,
             "endDate": 1551218400000,
+            "isDone": "false",
             "priority": "Normal",
-            "approved": false,
+            "aproved": "false",
             "duration": 11,
             "subrows": [
                 {
@@ -291,7 +304,8 @@
                     "startDate": 1550354400000,
                     "endDate": 1551218400000,
                     "priority": "High",
-                    "approved": false,
+                    "aproved": "false",
+                    "isDone": "false",
                     "duration": 11,
                     "subrows": [
                         {
@@ -300,9 +314,10 @@
                             "name": "Implementation Module 1",
                             "startDate": 1550354400000,
                             "endDate": 1551218400000,
+                            "isDone": "false",
                             "priority": "Normal",
                             "duration": 11,
-                            "approved": false,
+                            "aproved": "false",
                             "subrows": [
                                 {
                                     "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-15",
@@ -313,7 +328,8 @@
                                     "duration": 3,
                                     "progress": "50",
                                     "priority": "High",
-                                    "approved": false,
+                                    "isDone": "false",
+                                    "aproved": "false",
                                     "subrows": []
                                 },
                                 {
@@ -325,7 +341,8 @@
                                     "duration": 3,
                                     "progress": "50",
                                     "priority": "Low",
-                                    "approved": true,
+                                    "isDone": "false",
+                                    "aproved": true,
                                     "subrows": []
                                 },
                                 {
@@ -336,8 +353,9 @@
                                     "endDate": 1550700000000,
                                     "duration": 2,
                                     "progress": "0",
+                                    "isDone": "false",
                                     "priority": "Normal",
-                                    "approved": true,
+                                    "aproved": true,
                                     "subrows": []
                                 },
                                 {
@@ -349,7 +367,8 @@
                                     "duration": 2,
                                     "progress": "0",
                                     "priority": "Critical",
-                                    "approved": false,
+                                    "isDone": "false",
+                                    "aproved": "false",
                                     "subrows": []
                                 },
                                 {
@@ -358,10 +377,11 @@
                                     "name": "Customer review meeting",
                                     "startDate": 1550700000000,
                                     "endDate": 1551218400000,
+                                    "isDone": "false",
                                     "duration": 2,
                                     "progress": "0",
                                     "priority": "High",
-                                    "approved": false,
+                                    "aproved": "false",
                                     "subrows": []
                                 },
                                 {
@@ -372,7 +392,8 @@
                                     "endDate": 1551218400000,
                                     "duration": 0,
                                     "priority": "Low",
-                                    "approved": true,
+                                    "isDone": "false",
+                                    "aproved": true,
                                     "subrows": []
                                 }
                             ]
@@ -384,9 +405,10 @@
                     "index": 22,
                     "name": "Phase 2",
                     "startDate": 1550354400000,
+                    "isDone": "false",
                     "endDate": 1550700000000,
                     "priority": "High",
-                    "approved": false,
+                    "aproved": "false",
                     "duration": 12,
                     "subrows": [
                         {
@@ -396,7 +418,8 @@
                             "startDate": 1550354400000,
                             "endDate": 1550700000000,
                             "priority": "Critical",
-                            "approved": false,
+                            "isDone": "false",
+                            "aproved": "false",
                             "duration": 12,
                             "subrows": [
                                 {
@@ -408,7 +431,8 @@
                                     "duration": 4,
                                     "progress": "50",
                                     "priority": "Normal",
-                                    "approved": true,
+                                    "isDone": "false",
+                                    "aproved": true,
                                     "subrows": []
                                 },
                                 {
@@ -418,9 +442,10 @@
                                     "startDate": 1550354400000,
                                     "endDate": 1550613600000,
                                     "duration": 4,
+                                    "isDone": "false",
                                     "progress": "50",
                                     "priority": "Critical",
-                                    "approved": true,
+                                    "aproved": true,
                                     "subrows": []
                                 },
                                 {
@@ -430,9 +455,10 @@
                                     "startDate": 1550700000000,
                                     "endDate": 1550700000000,
                                     "duration": 2,
+                                    "isDone": "false",
                                     "progress": "0",
                                     "priority": "High",
-                                    "approved": false,
+                                    "aproved": "false",
                                     "subrows": []
                                 },
                                 {
@@ -444,7 +470,8 @@
                                     "duration": 2,
                                     "progress": "0",
                                     "priority": "Low",
-                                    "approved": false,
+                                    "isDone": "false",
+                                    "aproved": "false",
                                     "subrows": []
                                 },
                                 {
@@ -455,8 +482,9 @@
                                     "endDate": 1551304800000,
                                     "duration": 2,
                                     "progress": "0",
+                                    "isDone": "false",
                                     "priority": "Critical",
-                                    "approved": true,
+                                    "aproved": true,
                                     "subrows": []
                                 },
                                 {
@@ -465,9 +493,10 @@
                                     "name": "Phase 2 complete",
                                     "startDate": 1551304800000,
                                     "endDate": 1551304800000,
+                                    "isDone": "false",
                                     "duration": 0,
                                     "priority": "Normal",
-                                    "approved": false,
+                                    "aproved": "false",
                                     "subrows": []
                                 }
                             ]
@@ -480,8 +509,9 @@
                     "name": "Phase 3",
                     "startDate": 1550354400000,
                     "endDate": 1551218400000,
+                    "isDone": "false",
                     "priority": "Normal",
-                    "approved": false,
+                    "aproved": "false",
                     "duration": 11,
                     "subrows": [
                         {
@@ -491,7 +521,8 @@
                             "startDate": 1550354400000,
                             "endDate": 1551218400000,
                             "priority": "High",
-                            "approved": false,
+                            "aproved": "false",
+                            "isDone": "false",
                             "duration": 11,
                             "subrows": [
                                 {
@@ -499,11 +530,12 @@
                                     "index": 32,
                                     "name": "Development Task 1",
                                     "startDate": 1550354400000,
+                                    "isDone": "false",
                                     "endDate": 1550527200000,
                                     "duration": 3,
                                     "progress": "50",
                                     "priority": "Low",
-                                    "approved": true,
+                                    "aproved": true,
                                     "subrows": []
                                 },
                                 {
@@ -512,10 +544,11 @@
                                     "name": "Development Task 2",
                                     "startDate": 1550354400000,
                                     "endDate": 1550527200000,
+                                    "isDone": "false",
                                     "duration": 3,
                                     "progress": "50",
                                     "priority": "Normal",
-                                    "approved": false,
+                                    "aproved": "false",
                                     "subrows": []
                                 },
                                 {
@@ -526,8 +559,9 @@
                                     "endDate": 1550700000000,
                                     "duration": 2,
                                     "progress": "0",
+                                    "isDone": "false",
                                     "priority": "Critical",
-                                    "approved": true,
+                                    "aproved": true,
                                     "subrows": []
                                 },
                                 {
@@ -538,8 +572,9 @@
                                     "endDate": 1551045600000,
                                     "duration": 2,
                                     "progress": "0",
+                                    "isDone": "false",
                                     "priority": "High",
-                                    "approved": false,
+                                    "aproved": "false",
                                     "subrows": []
                                 },
                                 {
@@ -551,7 +586,8 @@
                                     "duration": 2,
                                     "progress": "0",
                                     "priority": "Normal",
-                                    "approved": true,
+                                    "isDone": "false",
+                                    "aproved": true,
                                     "subrows": []
                                 },
                                 {
@@ -562,7 +598,8 @@
                                     "endDate": 1551218400000,
                                     "duration": 0,
                                     "priority": "Critical",
-                                    "approved": false,
+                                    "isDone": "false",
+                                    "aproved": "false",
                                     "subrows": []
                                 }
                             ]
