@@ -14,15 +14,13 @@ const fetchAll = async (request, response, next) => {
   }
 };
 
-const create = async (request, response, next) => {
+const createOne = (request, response, next) => {
   try {
-    const { params, body } = request;
-
     // @rowStatus can be 'next' or 'child'
     // @body row data & parents indexes and inds array
-    await rowService.create(params.rowStatus, params.index, body);
+    rowService.create(request.body);
 
-    return response.status(200);
+    return response.status(200).json({ status: 'success' });
   } catch (error) {
     next(error);
   }
@@ -30,5 +28,5 @@ const create = async (request, response, next) => {
 
 module.exports = {
   fetchAll,
-  create
+  createOne
 };

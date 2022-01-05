@@ -5,6 +5,7 @@ const { rowController } = require('../modules/Row');
 const router = new Router();
 
 router.get('/rows', rowController.fetchAll);
+router.post('/rows', rowController.createOne);
 
 router.get('/columns', columnController.fetchAll);
 router.post('/columns', columnController.createOne);

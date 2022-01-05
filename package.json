@@ -15,12 +15,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "eslint": "^8.4.1",
     "express": "^4.17.1",
     "node-json-db": "^1.4.1",
     "nope.db": "^0.0.9",
-    "simple-json-db": "^1.2.3"
+    "simple-json-db": "^1.2.3",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
