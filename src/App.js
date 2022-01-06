@@ -16,7 +16,7 @@ const server = http.createServer(app);
 
 socket.init(server);
 
-server.listen(8000,()=>{
+server.listen(process.env.PORT || 8000,()=> {
   // eslint-disable-next-line no-console
   console.log('Server Started at Port, 8000');
 });

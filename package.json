@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint .",
-    "dev:start": "node ./src/App.js",
-    "start": "node ./build/App.js",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/App.js",
     "precommit": "eslint ."
   },
   "keywords": [],
@@ -19,8 +16,6 @@
     "cors": "^2.8.5",
     "eslint": "^8.4.1",
     "express": "^4.17.1",
-    "node-json-db": "^1.4.1",
-    "nope.db": "^0.0.9",
     "simple-json-db": "^1.2.3",
     "uuid": "^8.3.2",
     "ws": "^8.4.0"
@@ -40,7 +35,6 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "nodemon": "^2.0.15",
     "husky": "^7.0.4"
   }
 }
