@@ -7,20 +7,25 @@ const indexAll = () => {
 
 const create = ({rowData, path, rowStatus}) => {
   const rows = repository.getAll();
-  const {parentRows, pathInfo, row, rowIndex} = parsePath(path, rows);
+  const toPath = parsePath(path, rows);
 
-  rowData.id = uuidv4();
-  switch (rowStatus) {
-    case 'next':
-      parentRows.splice(rowIndex, 0, rowData);
-      break;
-    case 'child':
-      row.subrows.push(rowData);
-      break;
-  }
-  updateIndexes(rows.slice(pathInfo[0].index))
+  insertRow(rowStatus, rowData, toPath);
+  updateIndexes(rows.slice(toPath.pathInfo[0].index))
   repository.update(rows);
 };
+
+function insertRow(status, data, pathInfo) {
+  data.id = uuidv4();
+  data.subrows = [];
+  switch (status) {
+    case 'next':
+      pathInfo.parentRows.splice(pathInfo.rowIndex + 1, 0, data);
+      break;
+    case 'child':
+      pathInfo.row.subrows.push(data);
+      break;
+  }
+}
 
 function parsePath(path, rows) {
   const rowId = path.pop();
@@ -103,11 +108,25 @@ const deleteMany = ({ paths }) => {
   repository.update(rows);
 }
 
+const paste = ({rowStatus, fromPaths, toPath}) => {
+  const rows = repository.getAll();
+  const to = parsePath(toPath, rows);
+
+  for (const fromPath of fromPaths) {
+    const from = parsePath(fromPath, rows);
+    insertRow(rowStatus, { ...from.row }, to);
+  }
+
+  updateIndexes(rows.slice(to.pathInfo.index))
+  repository.update(rows);
+}
+
 module.exports = {
   indexAll,
   create,
   updateOne,
   addColumn,
   removeColumns,
-  deleteMany
+  deleteMany,
+  paste
 };

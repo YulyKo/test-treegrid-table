@@ -43,9 +43,21 @@ const deleteMany = (request, response, next) => {
   }
 }
 
+const paste = (request, response, next) => {
+  try {
+    rowService.paste(request.body);
+    socket.send('rows:update', rowService.indexAll())
+
+    return response.status(200).json({ status: 'success' });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   fetchAll,
   createOne,
   updateOne,
-  deleteMany
+  deleteMany,
+  paste
 };
