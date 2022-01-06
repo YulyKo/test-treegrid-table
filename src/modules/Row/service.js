@@ -12,20 +12,13 @@ const create = ({rowData, path, rowStatus}) => {
   rowData.id = uuidv4();
   switch (rowStatus) {
     case 'next':
-      parentRows.splice(rowIndex + 1, 0, rowData);
+      parentRows.splice(rowIndex, 0, rowData);
       break;
     case 'child':
       row.subrows.push(rowData);
       break;
   }
-
-  let index = pathInfo[0].row.index;
-
-  iterateRows(rows.slice(pathInfo[0].index), row => {
-    row.index = index;
-    index++;
-  });
-
+  updateIndexes(rows.slice(pathInfo[0].index))
   repository.update(rows);
 };
 
@@ -41,6 +34,15 @@ function parsePath(path, rows) {
   }
   const rowIndex = parentRows.findIndex(row => row.id === rowId);
   return {pathInfo, parentRows, rowIndex, row: parentRows[rowIndex]};
+}
+
+function updateIndexes(rows) {
+  let index = rows[0].index;
+
+  iterateRows(rows, row => {
+    row.index = index;
+    index++;
+  });
 }
 
 function iterateRows(rows, callback) {
@@ -84,10 +86,28 @@ const removeColumns = (columns) => {
   repository.update(rows);
 };
 
+const deleteMany = ({ paths }) => {
+  const rows = repository.getAll();
+  let firstPath = null;
+
+  for (const path of paths) {
+    const { parentRows, rowIndex, pathInfo } = parsePath(path, rows)
+    parentRows.splice(rowIndex, 1);
+
+    if (firstPath === null || pathInfo.index < firstPath.index) {
+      firstPath = pathInfo;
+    }
+  }
+
+  updateIndexes(rows.slice(firstPath.index))
+  repository.update(rows);
+}
+
 module.exports = {
   indexAll,
   create,
   updateOne,
   addColumn,
-  removeColumns
+  removeColumns,
+  deleteMany
 };

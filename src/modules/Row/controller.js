@@ -12,8 +12,6 @@ const fetchAll = async (request, response, next) => {
 
 const createOne = (request, response, next) => {
   try {
-    // @rowStatus can be 'next' or 'child'
-    // @body row data & parents indexes and inds array
     rowService.create(request.body);
     socket.send('rows:update', rowService.indexAll())
 
@@ -25,8 +23,6 @@ const createOne = (request, response, next) => {
 
 const updateOne = (request, response, next) => {
     try {
-        // @rowStatus can be 'next' or 'child'
-        // @body row data & parents indexes and inds array
         rowService.updateOne(request.body);
         socket.send('rows:update', rowService.indexAll())
 
@@ -36,8 +32,20 @@ const updateOne = (request, response, next) => {
     }
 }
 
+const deleteMany = (request, response, next) => {
+  try {
+    rowService.deleteMany(request.body);
+    socket.send('rows:update', rowService.indexAll())
+
+    return response.status(200).json({ status: 'success' });
+  } catch (error) {
+    next(error);
+  }
+}
+
 module.exports = {
   fetchAll,
   createOne,
-  updateOne
+  updateOne,
+  deleteMany
 };
