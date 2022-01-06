@@ -12,7 +12,7 @@ const create = ({rowData, path, rowStatus}) => {
   rowData.id = uuidv4();
   switch (rowStatus) {
     case 'next':
-      parentRows.splice(rowIndex, 0, rowData);
+      parentRows.splice(rowIndex + 1, 0, rowData);
       break;
     case 'child':
       row.subrows.push(rowData);
