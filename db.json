@@ -18,7 +18,7 @@
             "id": "39e3e82b-ed17-4c17-9ddb-59dac8a396e0-c2",
             "field": "name",
             "name": "Name",
-            "dataType": "string",
+            "dataType": "text",
             "minWidth": 120,
             "fontSize": 14,
             "defaultValue": 0,
