@@ -8,10 +8,11 @@ const fetchAll = (request, response, next) => {
     return response.status(200).json(result);
   } catch (error) {
     next(error);
+    return error;
   }
 };
 
-const createOne = ({body}, response, next) => {
+const createOne = ({ body }, response, next) => {
   try {
     if (body) {
       const column = columnService.create(body);
@@ -24,9 +25,11 @@ const createOne = ({body}, response, next) => {
     return response.status(200).json({status: 'success'});
   } catch (error) {
     next(error);
+    return error;
   }
 };
 
+// eslint-disable-next-line consistent-return
 const updateOne = ({body, params}, response, next) => {
   try {
     if (body) {
@@ -37,6 +40,7 @@ const updateOne = ({body, params}, response, next) => {
     return response.status(200).json({status: 'success'});
   } catch (error) {
     next(error);
+    return error;
   }
 };
 
@@ -51,6 +55,7 @@ const deleteMany = ({body}, response, next) => {
     return response.status(200).json({status: 'success'});
   } catch (error) {
     next(error);
+    return error;
   }
 };
 
