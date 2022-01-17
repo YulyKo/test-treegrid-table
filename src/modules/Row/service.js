@@ -55,15 +55,12 @@ function updateIndexes(rows) {
 }
 
 const create = ({ rowData, path, rowStatus }) => {
-  console.log('sdhjf');
   const rows = repository.getAll();
   const toPath = parsePath(path, rows);
 
   insertRow(rowStatus, rowData, toPath);
-  console.log('jkdfkjdf', toPath.pathInfo[0]);
   if (toPath.pathInfo.length > 0) {
     if (toPath.pathInfo[0].index !== undefined) {
-      console.log('index', toPath.pathInfo[0].index);
       const indexes = rows.slice(toPath.pathInfo[0].index);
       updateIndexes(indexes);
     } else {
