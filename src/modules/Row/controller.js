@@ -13,7 +13,6 @@ const fetchAll = async (request, response, next) => {
 
 const createOne = (request, response, next) => {
   try {
-    console.log(request.body);
     rowService.create(request.body);
     socket.send('rows:update', rowService.indexAll());
 
