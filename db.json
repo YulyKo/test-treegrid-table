@@ -288,35 +288,7 @@
             "d6519b61-e3f1-4317-a4e4-82b764bd7910": null,
             "subrows": [],
             "id": "06d4c799-a238-433b-bab5-12647c999a0a",
-            "index": 31,
-            "465c7a5d-28d9-4bf4-817a-87e119a71ae9": null
-        },
-        {
-            "name": "Row Name",
-            "startDate": "1970-01-01T00:00:00.000Z",
-            "duration": 0,
-            "progress": 0,
-            "priority": 0,
-            "aproved": "true",
-            "isDone": "true",
-            "d6519b61-e3f1-4317-a4e4-82b764bd7910": null,
-            "subrows": [],
-            "id": "06d4c799-a238-433b-bab5-12647c999a0a",
             "index": 12,
-            "465c7a5d-28d9-4bf4-817a-87e119a71ae9": null
-        },
-        {
-            "name": "Row Name",
-            "startDate": "1970-01-01T00:00:00.000Z",
-            "duration": 0,
-            "progress": 0,
-            "priority": 0,
-            "aproved": "true",
-            "isDone": "true",
-            "d6519b61-e3f1-4317-a4e4-82b764bd7910": null,
-            "subrows": [],
-            "id": "06d4c799-a238-433b-bab5-12647c999a0a",
-            "index": 31,
             "465c7a5d-28d9-4bf4-817a-87e119a71ae9": null
         },
         {
