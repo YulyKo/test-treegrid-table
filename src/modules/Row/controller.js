@@ -3,7 +3,7 @@ const socket = require('../socket');
 
 const fetchAll = async (request, response, next) => {
   try {
-    const result = rowService.indexAll()
+    const result = rowService.indexAll();
     response.status(200).json(result);
   } catch (error) {
     next(error);
@@ -13,7 +13,7 @@ const fetchAll = async (request, response, next) => {
 const createOne = (request, response, next) => {
   try {
     rowService.create(request.body);
-    socket.send('rows:update', rowService.indexAll())
+    socket.send('rows:update', rowService.indexAll());
 
     return response.status(200).json({ status: 'success' });
   } catch (error) {
@@ -24,7 +24,7 @@ const createOne = (request, response, next) => {
 const updateOne = (request, response, next) => {
     try {
         rowService.updateOne(request.body);
-        socket.send('rows:update', rowService.indexAll())
+        socket.send('rows:update', rowService.indexAll());
 
         return response.status(200).json({ status: 'success' });
     } catch (error) {
@@ -35,13 +35,13 @@ const updateOne = (request, response, next) => {
 const deleteMany = (request, response, next) => {
   try {
     rowService.deleteMany(request.body);
-    socket.send('rows:update', rowService.indexAll())
+    socket.send('rows:update', rowService.indexAll());
 
     return response.status(200).json({ status: 'success' });
   } catch (error) {
     next(error);
   }
-}
+};
 
 const paste = (request, response, next) => {
   try {

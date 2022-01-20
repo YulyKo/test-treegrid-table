@@ -10,7 +10,7 @@ const create = ({rowData, path, rowStatus}) => {
   const toPath = parsePath(path, rows);
 
   insertRow(rowStatus, rowData, toPath);
-  updateIndexes(rows.slice(toPath.pathInfo[0].index))
+  updateIndexes(rows.slice(toPath.pathInfo[0]?.index));
   repository.update(rows);
 };
 
@@ -86,7 +86,7 @@ const removeColumns = (columns) => {
     for (const field of fields) {
       delete row[field];
     }
-  })
+  });
 
   repository.update(rows);
 };
@@ -96,7 +96,7 @@ const deleteMany = ({ paths }) => {
   let firstPath = null;
 
   for (const path of paths) {
-    const { parentRows, rowIndex, pathInfo } = parsePath(path, rows)
+    const { parentRows, rowIndex, pathInfo } = parsePath(path, rows);
     parentRows.splice(rowIndex, 1);
 
     if (firstPath === null || pathInfo.index < firstPath.index) {
@@ -104,9 +104,9 @@ const deleteMany = ({ paths }) => {
     }
   }
 
-  updateIndexes(rows.slice(firstPath.index))
+  updateIndexes(rows.slice(firstPath.index));
   repository.update(rows);
-}
+};
 
 const paste = ({rowStatus, fromPaths, toPath}) => {
   const rows = repository.getAll();
@@ -117,9 +117,9 @@ const paste = ({rowStatus, fromPaths, toPath}) => {
     insertRow(rowStatus, { ...from.row }, to);
   }
 
-  updateIndexes(rows.slice(to.pathInfo.index))
+  updateIndexes(rows.slice(to.pathInfo.index));
   repository.update(rows);
-}
+};
 
 module.exports = {
   indexAll,
