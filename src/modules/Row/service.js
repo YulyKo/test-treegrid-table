@@ -30,7 +30,7 @@ function parsePath(path, rows) {
     pathInfo.push(info);
     parentRows = info.row.subrows;
   }
-  const rowIndex = parentRows.findIndex(row => row.id === rowId);
+  const rowIndex = parentRows.find(row => row.id === rowId).index;
   return {pathInfo, parentRows, rowIndex, row: parentRows[rowIndex]};
 }
 
@@ -107,7 +107,7 @@ const deleteMany = ({ paths }) => {
 
   for (const path of paths) {
     const { parentRows, rowIndex, pathInfo } = parsePath(path, rows);
-    parentRows.splice(rowIndex, 1);
+    parentRows.splice(rowIndex - 1, 1);
 
     if (firstPath === null || pathInfo.index < firstPath.index) {
       firstPath = pathInfo;
