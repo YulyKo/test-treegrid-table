@@ -24,7 +24,7 @@
             "defaultValue": "Row Name",
             "fontColor": "#6d2222",
             "backgroundColor": "#e2d5d5",
-            "alignment": "right",
+            "alignment": "left",
             "textWrap": true,
             "dropdownValues": [
                 {
