@@ -28,10 +28,11 @@ function insertRow(status, data, pathInfo) {
 }
 
 function parsePath(path, rows) {
-  const rowId = path.pop();
+  const copiedPath = [...path];
+  const rowId = copiedPath.pop();
   let parentRows = rows;
   const pathInfo = [];
-  for (const rowId of path) {
+  for (const rowId of copiedPath) {
     const index = parentRows.findIndex(item => item.id === rowId);
     const info = {row: parentRows[index], index};
     pathInfo.push(info);
@@ -121,6 +122,20 @@ const paste = ({rowStatus, fromPaths, toPath}) => {
   repository.update(rows);
 };
 
+function createMany(rowStatus, newRows, toPath) {
+  newRows.forEach(newRow => {
+    // insertRow(rowStatus, newRow, toPath);
+    create({ rowData: newRow, path: toPath, rowStatus });
+  });
+}
+
+// fromPath - path to cuted rows
+// toPath - path
+const cutMany = ({rowStatus, createPath, delPaths, rows}) => {
+  deleteMany({paths: delPaths});
+  createMany(rowStatus, rows, createPath);
+};
+
 module.exports = {
   indexAll,
   create,
@@ -128,5 +143,6 @@ module.exports = {
   addColumn,
   removeColumns,
   deleteMany,
-  paste
+  paste,
+  cutMany
 };
