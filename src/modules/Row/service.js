@@ -79,6 +79,16 @@ const addColumn = (column) => {
   repository.update(rows);
 };
 
+const updateColumnDefaultValue = (columnId, newDefaultValue) => {
+  const rows = repository.getAll();
+
+  iterateRows(rows, row => {
+    row[columnId] = newDefaultValue;
+  });
+
+  repository.update(rows);
+}
+
 const removeColumns = (columns) => {
   const fields = columns.map(column => column.field);
   const rows = repository.getAll();
@@ -144,5 +154,6 @@ module.exports = {
   removeColumns,
   deleteMany,
   paste,
-  cutMany
+  cutMany,
+  updateColumnDefaultValue
 };

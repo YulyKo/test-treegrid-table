@@ -31,7 +31,9 @@ const updateOne = ({body, params}, response, next) => {
   try {
     if (body) {
       columnService.updateOne(params.columnId, body);
+      rowService.updateColumnDefaultValue(params.columnId, body.defaultValue);
       socket.send('columns:update', columnService.indexAll());
+      socket.send('rows:update', rowService.indexAll());
     }
 
     return response.status(200).json({status: 'success'});

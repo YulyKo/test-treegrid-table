@@ -11,7 +11,7 @@ const create = (column) => {
   const columns = repository.getAll();
   columns.push(column);
   repository.update(columns);
-  return column
+  return column;
 };
 
 const updateOne = (columnId, columnData) => {
@@ -24,7 +24,7 @@ const updateOne = (columnId, columnData) => {
     });
 
     repository.update(columns);
-}
+};
 
 const deleteMany = ({ ids }) => {
     const columns = repository.getAll();
@@ -32,7 +32,7 @@ const deleteMany = ({ ids }) => {
     const updated = columns.filter(column => !ids.includes(column.id));
     repository.update(updated);
     return deleted;
-}
+};
 
 module.exports = {
   indexAll,
