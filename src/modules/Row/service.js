@@ -43,7 +43,11 @@ function parsePath(path, rows) {
 }
 
 function updateIndexes(rows) {
+  const allRows = repository.getAll();
   let index = rows[0].index;
+  if (rows[0].id === allRows[0].id) {
+    index = 1;
+  }
 
   iterateRows(rows, row => {
     row.index = index;
@@ -142,6 +146,7 @@ function createMany(rowStatus, newRows, toPath) {
 // fromPath - path to cuted rows
 // toPath - path
 const cutMany = ({rowStatus, createPath, delPaths, rows}) => {
+  console.log(rowStatus, createPath, delPaths, rows);
   deleteMany({paths: delPaths});
   createMany(rowStatus, rows, createPath);
 };
